@@ -28,7 +28,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    margin: 63px 150px 0px 200px;
+    margin: 63px 150px 0px 220px;
     align-items: center;
 }
 
@@ -56,6 +56,9 @@ nav ul li a {
 /*--------------------------------------------------------------
                     section-one start  
  --------------------------------------------------------------*/
+ /* ------------------------------------------------------------
+                    banner-section start 
+ -------------------------------------------------------------*/
 .banner-header {
     display: flex;
     flex-direction: column;
@@ -93,13 +96,11 @@ nav ul li a {
 
 
 }
+/*-----------------------------------------------------------------------------                             banner-section end 
+------------------------------------------------------------------------------*/
 
-/*----------------------------------------------------------------                                      section-one end  
-    ---------------------------------------------------------------*/
-/*---------------------------------------------------------------
-                            section-two start 
-     --------------------------------------------------------------*/
-
+/*-----------------------------------------------------------------------------                             featured-section start 
+--------------------------------------------------------------------------*/
 
 .featured-section {
     display: flex;
@@ -123,13 +124,16 @@ nav ul li a {
     font-weight: 500px;
     font-size: 45px;
 }
-.primary-color{
+
+.primary-color {
     color: #727272;
 }
-.secondary-color{
+
+.secondary-color {
     color: #131313;
 }
-.tersery-color{
+
+.tersery-color {
     color: #FF900E;
 }
 
@@ -144,12 +148,21 @@ nav ul li a {
     padding: 10px 0px;
 
 }
+/*----------------------------------------------------------------------------                                      featured-section end 
+-----------------------------------------------------------------------------*/
 
-/*-------------------------------------------------------------------------
-                        section-two end 
- -------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------                             section-tree start 
- ------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------                                       section-one end
+--------------------------------------------------------------------------*/
+ /*------------------------------------------------------------------------- 
+                                section-two start                
+ --------------------------------------------------------------------------*/
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .exprience-sections {
     display: flex;
     width: 1300px;
@@ -179,6 +192,9 @@ nav ul li a {
 
 .exprience-section-secondry {
     margin-bottom: 70px;
+    background-color: rgb(219, 218, 218);
+    padding: 5px;
+    border-radius: 8px;
 }
 
 .exprience-section-secondry h3 {
@@ -199,9 +215,33 @@ nav ul li a {
     width: 700px;
     height: 959px;
 }
+.bt-section {
+    margin-left: 200px;
+    margin-top: -250px;
+    width: 342px;
+    height: 200px;
+    background: #FF900E;
+    border-radius: 8px;
+    color: white;
+}
+.bt-section h1 {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 65px;
+    text-align: center;
+}
+.bt-section p {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
 
-/*------------------------------------------------------------------------                                  section-tree end 
-------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------                               section-tow end  
+    ---------------------------------------------------------------------------*/
+
+
+    /*-----------------------------------------------------------------------------                             section-tree start 
+    ---------------------------------------------------------------------------*/
 
 .some-fact {
     margin-left: 240px;
@@ -226,6 +266,20 @@ nav ul li a {
     margin: 50px 200px 100px 200px;
 }
 
+.achivment-item {
+    background-color: rgb(233, 230, 230);
+    padding: 10px;
+    transition: 2s;
+    border-radius: 8px;
+
+}
+
+.achivment-item:hover {
+    transform: rotate(60deg);
+
+}
+
+
 .achivment {
     display: flex;
     flex-direction: column;
@@ -233,13 +287,19 @@ nav ul li a {
     border: 2px solid #FF900E;
     border-radius: 10px;
     padding: 20px;
+
 }
 
 .achivment img h2 p {
     padding: 10px;
+
 }
 
-.sponsor {
+    /*--------------------------------------------------------------------------                               section-tree end 
+    ---------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------                             section-four start 
+    --------------------------------------------------------------------------*/
+    .sponsor {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,8 +337,8 @@ nav ul li a {
     filter: grayscale(1);
 }
 
-    /*-------------------------------------------------------------------                               footer-section start 
-    -------------------------------------------------------------------*/
+/*-------------------------------------------------------------------                               footer-section start 
+-------------------------------------------------------------------*/
 
 footer {
     width: 100%;
@@ -300,15 +360,132 @@ footer p {
 /*------------------------------------------------------------------------
                             media quaries 
  -----------------------------------------------------------------------*/
- @media only screen and (max-width:576px) {
-    .nav{
-        flex-direction:column;
+@media only screen and (max-width:576px) {
+    nav {
+        width: 100%;
+        margin: 5px;
+        flex-direction: column;
     }
-    .page-header {
-        font-weight: 100%;
-        
+
+    nav ul {
+        margin-top: 20px;
+        margin-left: 5px;
     }
-    .section-1, .section-2, .section-3, .sponsor, footer{
+
+    .banner-img img {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .featured-img {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+    }
+
+    .featured-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .featured-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-description {
+        margin: 0;
+        width: 100%;
+    }
+
+    .bt-parimary {
+        margin: 0;
+        width: 100%;
+    }
+
+    .exprience-sections {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    .exprience-img img {
         display: none;
     }
- }
+
+    .exprience-featurs {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+
+    .exprience-section-main h2 {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .exprience-section-main p {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .exprience-featurs {
+        display: none;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .achivments {
+        display: flex;
+        flex-direction: column;
+    }
+    .bt-section{
+        width: 100%;
+        height: auto;
+        margin:5px 0px 5px 0px;
+        
+    }
+    .featured-description {
+        margin: 0;
+    }
+    .sponsor-logo {
+        display: flex;
+        flex-direction: column;}
+        .sponsor-logo img {
+          margin-top: 20px;
+        }
+      
+        footer {
+            width: 100%;
+            height: auto;
+            background-color: grey;
+            color: white;
+        
+        
+        }
+    
+        footer p {
+            margin: 0;
+            padding: 5px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+
+
+
+    .section-3,
+    
+    .section-4 {
+        display: none;
+    }
+}
