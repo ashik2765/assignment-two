@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------
+                            font 
+ --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Poppins:wght@500;700&family=Work+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*-------------------------------------------------------------
+                    header-section start 
+ -------------------------------------------------------------*/
+.page-header {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 63px 150px 0px 200px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 25px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+/*--------------------------------------------------------------
+                    header-section end
+ -------------------------------------------------------------*/
+/*--------------------------------------------------------------
+                    section-one start  
+ --------------------------------------------------------------*/
+.banner-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.banner-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+
+.banner-description {
+    text-align: center;
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.bt-parimary {
+    background: #FF900E;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.banner-img img {
+    width: 1150px;
+    height: 580px;
+    margin: 50px 200px 0px 230px;
+
+
+}
+
+/*----------------------------------------------------------------                                      section-one end  
+    ---------------------------------------------------------------*/
+/*---------------------------------------------------------------
+                            section-two start 
+     --------------------------------------------------------------*/
+
+
+.featured-section {
+    display: flex;
+    align-items: center;
+    margin: 100px 200px 0px 300px;
+
+}
+
+.featured-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.featured-img img {
+    width: 300px;
+    height: 300px;
+}
+
+.featured-title {
+    font-weight: 500px;
+    font-size: 45px;
+}
+.primary-color{
+    color: #727272;
+}
+.secondary-color{
+    color: #131313;
+}
+.tersery-color{
+    color: #FF900E;
+}
+
+.featured-description {
+    margin-left: 73px;
+}
+
+.featured-des {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 0px;
+
+}
+
+/*-------------------------------------------------------------------------
+                        section-two end 
+ -------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------                             section-tree start 
+ ------------------------------------------------------------------------*/
+.exprience-sections {
+    display: flex;
+    width: 1300px;
+    margin: 130px 100px 20px 120px;
+}
+
+.exprience-featurs {
+    width: 586px;
+    height: 982px;
+    margin-right: 54px;
+    margin-top: 80px;
+}
+
+.exprience-section-main h2 {
+    border-left: 5px solid #FF900E;
+    font-weight: 700;
+    font-size: 45px;
+    padding: 10px 0px 5px 10px;
+}
+
+.exprience-section-main p {
+    width: 586px;
+    height: 78px;
+    color: #727272;
+    padding: 10px 0px 10px 0px;
+}
+
+.exprience-section-secondry {
+    margin-bottom: 70px;
+}
+
+.exprience-section-secondry h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+    padding: 5px 0px 5px 20px;
+}
+
+.exprience-section-secondry p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    padding: 5px 0px 5px 20px;
+}
+
+.exprience-img img {
+    width: 700px;
+    height: 959px;
+}
+
+/*------------------------------------------------------------------------                                  section-tree end 
+------------------------------------------------------------------------*/
+
+.some-fact {
+    margin-left: 240px;
+}
+
+.some-fact h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding-bottom: 10px;
+}
+
+.some-fact p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.achivments {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 200px 100px 200px;
+}
+
+.achivment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #FF900E;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.achivment img h2 p {
+    padding: 10px;
+}
+
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsor h1 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding: 10px;
+}
+
+.sponsor p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    text-align: center;
+    padding: 10px;
+}
+
+.sponsor-logos {
+    margin-top: 50px;
+}
+
+.sponsor-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.sponsor-logo img {
+    width: 165.83px;
+    height: 50px;
+    margin-left: 50px;
+    filter: grayscale(1);
+}
+
+    /*-------------------------------------------------------------------                               footer-section start 
+    -------------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 200px;
+
+
+}
+
+footer p {
+    margin-left: 500px;
+    padding-top: 100px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*-------------------------------------------------------------------------                                 footer-section end
+------------------------------------------------------------------------ */
+
+/*------------------------------------------------------------------------
+                            media quaries 
+ -----------------------------------------------------------------------*/
+ @media only screen and (max-width:576px) {
+    .nav{
+        flex-direction:column;
+    }
+    .page-header {
+        font-weight: 100%;
+        
+    }
+    .section-1, .section-2, .section-3, .sponsor, footer{
+        display: none;
+    }
+ }
